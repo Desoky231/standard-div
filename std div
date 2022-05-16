@@ -1,0 +1,19 @@
+
+import math
+x = list()
+for i in range(6):
+    x.append(5)
+
+x = [15, 4, 3, 8, 15, 22, 7, 9, 2, 3, 3, 12, 6]
+
+x.sort()
+print(x)
+mean = sum(x) / len(x)
+print("mean is: ", mean)
+sum =0
+for i in x:
+    sum = sum + pow(( i - mean), 2)
+sum = sum / len(x)
+print("vairaince is:  " ,sum)
+std = sum**0.5
+print("standard is:  ", std)
